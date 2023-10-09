@@ -2,26 +2,272 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.fixed {
+  position: fixed;
 }
 
-@media (prefers-color-scheme: white) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* Desplazamiento vertical para el contenido central */
+.overflow-y-auto {
+  overflow-y: auto;
 }
 
-main {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+body {
+  overflow: hidden;
+}
+
+.scrollbox::-webkit-scrollbar {
+  width: 12px;
+}
+
+.scrollbox::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbox::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+.scrollbox:hover::-webkit-scrollbar-thumb {
+  background: #5a5a5a;
+}
+
+.scrollbox::-webkit-scrollbar-thumb:hover {
+  background: #898989;
+}
+
+.scrollbox::-webkit-scrollbar-thumb:active {
+  background: #a5a5a5;
+}
+
+.scrollbox {
+  scrollbar-gutter: stable;
+}
+*{
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+aside{
+  background-color: azure;
+  width: 350px;
+  height: 100vh;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  
+}
+
+section{
+  margin: 10px;
+
+}
+
+h3{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+
+}
+
+/*selectores de clase*/
+
+.info-personal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 25px;
+
+}
+
+.foto-personal{
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+
+}
+
+.nombre-persona{
+  display: flex;
+  gap: 5px;
+
+}
+
+.nombre{
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+
+}
+
+.titulo-persona{
+  color: #2F2E33;
+  font-size: 25px;
+
+}
+
+.profile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-container{
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  gap: 5px;
+  
+}
+
+.contact-me{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.personal-skill{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.skills{
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+}
+
+.skill-container{
+  padding: 0px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.skill-marker-container{
+  display: flex;
+  gap: 5px;
+
+}
+
+.skill-marker{
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+ 
+}
+
+.top-links{
+  display: flex;
+  gap: 10px;
+
+}
+
+.main-title{
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  padding: 5px 10px;
+}
+
+.main-title > h3{
+  color: white;
+
+}
+
+.milestone-container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px 15px;
+
+}
+
+.milestone{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+
+}
+
+.milestone > h4{
+  text-transform: uppercase;
+
+}
+
+.milestone > span{
+  color: #9999;
+
+}
+
+.grid-container{
+  display: flex;
+  justify-content: center;
+}
+.profesional-skills-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  width: 5fr;
+  
+}
+
+.profesional-skill{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  padding: 5px 15px;
+  
+}
+
+.profesional-skill-bar{
+  width: 80px;
+  height: 10px;
+  background-color: #b9b9b9;
+  display: flex;
+  align-items: center;
+}
+
+.profesional-skill-bar > div{
+  width: 90px;
+  height: 10px;
+  background-color: #242424;
+  width: 50%;
+}
+
+/* clases utilitarias*/
+
+.black-background{
+  background-color:black
+
+}
+
+.gray-background{
+  background-color:grey
+
+}
+
+.line-div {
+  width: 75%; 
+  height: 2px; 
+  background-color: #2F2E33;
+  margin: 0 auto;
+
+  margin-top: 2px;
+}
+
+.debug {
+  border: 1px solid red;
 }

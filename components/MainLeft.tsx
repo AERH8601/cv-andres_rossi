@@ -1,116 +1,57 @@
 import React from 'react';
+import { PercentBar } from "./PercentBar";
 
 const MainLeft = () => {
   return (
 
     <>
-        <div className="w-1/2 p-4">
-        {/* Contenido de la columna izquierda */}
-        </div>
+        <aside className='w-3/12 max-w-200 mr-1 italic text-xl flex-none items-center bg-cerulean p-1'>
+            <section className=''>
+                <div className="info-personal">
+                    <img 
+                        className="rounded-full h-40 w-40"
+                        src='./images/AndresRosss_perfil.jpg'
+                        alt="Foto perfil"/>
+                    <div className="nombre">
+                        <span>Andres Rossi</span>                        
+                    </div>
+                    <p className='flex text-center titulo-persona'>
+                        Ingeniero de Petroleos <br />
+                        Msc en Sostenibilidad energetica <br />
+                        Proximo ingeniero de sistemas
+                    </p>
 
-        <aside className='debug w-96 bg-red-600 p-10'>
-        <section>
-            <div className="info-personal">
-                <img 
-                    className="foto-personal"
-                    src="media/Icono_Andres_Africa.png"
-                    alt="Foto Africa"/>
-                <div className="nombre-persona">
-                    <span className="primer-nombre">Andres</span>
-                    <span className="apellido">Rossi</span>
                 </div>
-                <span className="titulo-persona">Petroleum Enginer and Msc Renovable Energies</span>
+            </section>
+
+            <div className="line-div px-14">
+                
             </div>
-        </section>
-        <section>
-            <div className="profile">
-                <h3>Profile</h3>
-            <p>
-            Se llena con la informacion profesional de logros y
-            desarrollo de proyectos, se pueden añadir diferentes recursos o
-            información adicional.
-            </p>
-            </div>
-        </section>
-        <section>
-            <div className="contact-me">                
-            <h3>Contact me</h3>
-            <div className="icon-container">
-                <span className="material-symbols-outlined">
-                smartphone
-                </span>
-            <h4>Phone number</h4>
-            </div>
-            <span>+57 300-688-0866</span>
-            <div className="icon-container">
-                <span className="material-symbols-outlined">
-                mail
-                </span>
-            <h4>Email address</h4>            
-            </div>
-            <span>andres.rossi@udea.edu.co</span>
-            <h4>Linkedin</h4>
-            <span>link</span>
-            </div>
-        </section>
-        <section>
-            <div className="personal-skill">
-                <h3>Personal skills</h3>
-                <div className="skills">
-                    <div className="skill-container">
-                        <span>Team work</span>
-                        <div className="skill-marker-container">
-                            <div className="skill-marker black-background"></div>
-                            <div className="skill-marker black-background"></div>
-                            <div className="skill-marker black-background"></div>
-                            <div className="skill-marker black-background"></div>
-                            <div className="skill-marker black-background"></div>
-                        </div>
-                    </div>
-                    <div className="skill-container">
-                        <span>Communication</span>
-                        <div className="skill-marker-container">
-                            <div className="skill-marker black-background"></div>
-                            <div className="skill-marker black-background"></div>
-                            <div className="skill-marker black-background"></div>
-                            <div className="skill-marker gray-background"></div>
-                            <div className="skill-marker gray-background"></div>
-                        </div>
-                    </div>
-                    <div className="skill-container">
-                        <span>creative</span>
-                        <div className="skill-marker-container">
-                            <div className="skill-marker black-background"></div>
-                            <div className="skill-marker black-background"></div>
-                            <div className="skill-marker black-background"></div>
-                            <div className="skill-marker black-background"></div>
-                            <div className="skill-marker gray-background"></div>
-                        </div>
-                    </div>
-                    <div className="skill-container">
-                        <span>Organisation</span>
-                        <div className="skill-marker-container">
-                            <div className="skill-marker black-background"></div>
-                            <div className="skill-marker black-background"></div>
-                            <div className="skill-marker black-background"></div>
-                            <div className="skill-marker black-background"></div>
-                            <div className="skill-marker gray-background"></div>
-                        </div>
-                    </div>
-                    <div className="skill-container">
-                        <span>Managment</span>
-                        <div className="skill-marker-container">
-                            <div className="skill-marker black-background"></div>
-                            <div className="skill-marker black-background"></div>
-                            <div className="skill-marker black-background"></div>
-                            <div className="skill-marker black-background"></div>
-                            <div className="skill-marker gray-background"></div>
-                        </div>
-                    </div>
+
+            <section className='items-center text-center'>
+                <div className="min-w-max space-y-1 px-5">
+                <h3>Idiomas</h3>
+                <PercentBar name="Español" percent="100" />
+                <PercentBar name="Inglés" percent="60" />
+                <PercentBar name="Portugués" percent="50" />
                 </div>
+            </section>
+
+            <div className='line-div'>
+
             </div>
-            
-        </section>
+
+            <section className='text-center'>
+                <div>
+                    <div className="min-w-full space-y-1 px-5">
+                        <h3>Lenguajes de Programación</h3>
+                        <PercentBar name="Java" percent="50" />
+                        <PercentBar name="Python" percent="70" />
+                        <PercentBar name="Html" percent="50" />
+                        <PercentBar name="CSS" percent="60" />
+                    </div>
+                </div>            
+            </section>
         </aside>
     </>
     
