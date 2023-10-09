@@ -28,7 +28,7 @@ const MainLeft = () => {
                 
             </div>
 
-            <section className='items-center text-center'>
+            <section className='px-5 items-center text-center'>
                 <div className="min-w-max space-y-1 px-5">
                 <h3>Idiomas</h3>
                 <PercentBar name="Español" percent="100" />
@@ -41,7 +41,7 @@ const MainLeft = () => {
 
             </div>
 
-            <section className='text-center'>
+            <section className='px-5 mx-min items-center text-center'>
                 <div>
                     <div className="min-w-full space-y-1 px-5">
                         <h3>Lenguajes de Programación</h3>
