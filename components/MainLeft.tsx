@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { PercentBar } from "./PercentBar";
 
 const MainLeft = () => {
@@ -8,7 +9,7 @@ const MainLeft = () => {
         <aside className='w-3/12 max-w-200 mr-1 italic text-xl flex-none items-center bg-cerulean p-1'>
             <section className=''>
                 <div className="info-personal">
-                    <img 
+                    <Image 
                         className="rounded-full h-40 w-40"
                         src='./images/AndresRosss_perfil.jpg'
                         alt="Foto perfil"/>
