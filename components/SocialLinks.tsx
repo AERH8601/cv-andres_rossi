@@ -19,7 +19,7 @@ const SocialLinks = () => {
   ];
 
   return (
-    <aside className='debug w-fit ml-1 bg-cerulean p-1'>
+    <aside className='w-fit ml-1 bg-cerulean p-1'>
             <div className="flex-col my-10 p-1 gap-1 text-4xl">
             {socialMediaLinks.map((social, index) => (
                 <a key={index} href={social.link} target="_blank" rel="noopener noreferrer">
