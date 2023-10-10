@@ -20,20 +20,12 @@ body {
   width: 12px;
 }
 
-.scrollbox::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.scrollbox::-webkit-scrollbar-thumb {
-  background: transparent;
-}
-
 .scrollbox:hover::-webkit-scrollbar-thumb {
-  background: #5a5a5a;
+  background: #73605B;
 }
 
 .scrollbox::-webkit-scrollbar-thumb:hover {
-  background: #898989;
+  background: white;
 }
 
 .scrollbox::-webkit-scrollbar-thumb:active {
@@ -87,12 +79,6 @@ h3{
   height: 150px;
   width: 150px;
   border-radius: 100%;
-
-}
-
-.nombre-persona{
-  display: flex;
-  gap: 5px;
 
 }
 
@@ -265,7 +251,7 @@ h3{
   background-color: #2F2E33;
   margin: 0 auto;
 
-  margin-top: 2px;
+  margin-top: 4px;
 }
 
 .debug {
